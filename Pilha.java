@@ -25,6 +25,7 @@ public class Pilha {
             atual.setProximo(novoNo);
         }
         System.out.println("Elemento inserido: " + informacao);
+        imprime();
     }
 
     public void remove()
@@ -46,6 +47,7 @@ public class Pilha {
             }
         }   
         System.out.println("Elemento removido");
+        imprime();
     }
 
     public void imprime()

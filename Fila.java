@@ -15,13 +15,12 @@ public class Fila {
     public void insere(int informacao) {
         Nos novoNo = new Nos();
         novoNo.setInformacao(informacao);
-        Nos atual = primeiro;
-
         if (vazia()) {
             primeiro = novoNo;
             ultimo = novoNo;
             
         } else {
+            Nos atual = primeiro;
             while (atual.getProximo() != null) {
                 atual = atual.getProximo();
             }
@@ -29,16 +28,20 @@ public class Fila {
             ultimo = novoNo;
         }
         System.out.println("Elemento inserido: " + informacao);
+        imprime();
     }
 
     public void remove() {
         if (!vazia()) {
-            primeiro = primeiro.getProximo();
-            if (primeiro == null) {
+            if (primeiro.getProximo() == null) {
+                primeiro = null;
                 ultimo = null;
+            } else {
+                primeiro = primeiro.getProximo();
             }
         }
         System.out.println("Elemento removido");
+        imprime();
     }
 
     public void imprime() {
