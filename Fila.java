@@ -56,4 +56,12 @@ public class Fila {
             System.out.println("Fila vazia");
         }
     }
+
+    public int primeiroItem() {
+        if (!vazia()) {
+            return primeiro.getInformacao();
+        } else {
+            return -1;
+        }
+    }
 }
