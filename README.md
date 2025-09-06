@@ -20,6 +20,24 @@ Fila:
     insere(int): onde ele espera chegar um valor inteiro e adiciona no final.
     remove(): onde conferirmos se a o proximo elemento é vazio, pos ai teremos que alterar o valor do ulimo para ser igual o primeiro, caso contrario so retiramos o primeiro elemento da fila.
     imprimir(): imprime todos os elementos da Fila.
+    getprimorElemento(): onde que ela retorna o primeiro elemento da fila.
+    retonarTamnho(int): onde ele retorna o tamanho da fila.
+
+MargeListaEncadiada:
+*   Onde ele pega duas fila e cria uma terceiara contedo os elementos das daus de maneira ordenada, possui os metodos:
+    construirFila_C(): Onde que ele insere ordenando os valores.
+    imprimir(): onde ele retorna o valor da fila.
+    main(): onde foi realizado o teste de conferencia.
+
+MargeVetor:
+*   mesma premissa do MargeListaEncadida porem agora com vetores, possui os seguntes metodos:
+    vazio(): onde retonar que o primeiro valor e o ultimo são iguais.
+    cheio(): confere se a vetor dados(que representa a fila )está cheio
+    prencherVetor(): onde ele ordena os dados do vetor apartir dos valores da Fila A e Fila B
+    ensere(): onde ele ensere os dados, sendo chamado por prencherVetor.
+    main(): onde foi realizado os teste.
+
+
 
 
 Resultado dos teste realizado: 

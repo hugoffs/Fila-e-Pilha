@@ -57,4 +57,21 @@ public class Fila {
         }
     }
 
+    public Nos getprimorElemento(){
+        if(vazia()){
+            return null;
+        }
+        return primeiro;
+    }
+    public int retonarTamnho()
+    {
+        int tamnaho = 0 ;
+        Nos atual = primeiro;
+        while (atual != null) {
+            tamnaho ++;
+            atual = atual.getProximo();
+        }
+        return tamnaho;
+
+    }
 }
