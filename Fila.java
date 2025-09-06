@@ -57,11 +57,4 @@ public class Fila {
         }
     }
 
-    public int primeiroItem() {
-        if (!vazia()) {
-            return primeiro.getInformacao();
-        } else {
-            return -1;
-        }
-    }
 }
